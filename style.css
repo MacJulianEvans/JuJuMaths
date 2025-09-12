@@ -222,3 +222,17 @@ button,
     max-width: 350px; /* stops cards from being too wide */
   }
 }
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .game-list {
+    flex-direction: column;  /* stack cards */
+    align-items: center;
+  }
+}
