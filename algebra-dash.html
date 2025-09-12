@@ -7,21 +7,20 @@
   <script src="algebra-script.js" defer></script>
 </head>
 <body>
-  <h1>Algebra Dash</h1>
+  <h1>Math Dash</h1>
   <a href="index.html">⬅ Back to Home</a>
 
   <div id="timer">Time: 0s</div>
   <div id="question"></div>
-
-  <div>
-    <input type="number" id="answer" placeholder="Your ans">
-    <button id="submitBtn">Submit</button>
-  </div>
-
+  <form onsubmit="checkAnswer(); return false;">
+  <input type="number" id="answer" autocomplete="off" />
+  <button type="submit">Submit</button>
+  </form>
   <div id="score"></div>
   <div id="end"></div>
 
   <script>
+    // Submit answer by Enter
     const answerInput = document.getElementById("answer");
     const submitBtn = document.getElementById("submitBtn");
 
@@ -31,5 +30,8 @@
 
     submitBtn.addEventListener("click", checkAnswer);
   </script>
+  
+
 </body>
 </html>
+
