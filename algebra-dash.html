@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algebra Dash - JuJu Maths</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="algebra-script.js" defer></script>
+</head>
+<body>
+  <h1>Algebra Dash</h1>
+  <a href="index.html">⬅ Back to Home</a>
+
+  <div id="timer">Time: 0s</div>
+  <div id="question"></div>
+
+  <div>
+    <input type="number" id="answer" placeholder="Your ans">
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <div id="score"></div>
+  <div id="end"></div>
+
+  <script>
+    const answerInput = document.getElementById("answer");
+    const submitBtn = document.getElementById("submitBtn");
+
+    answerInput.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") checkAnswer();
+    });
+
+    submitBtn.addEventListener("click", checkAnswer);
+  </script>
+</body>
+</html>
