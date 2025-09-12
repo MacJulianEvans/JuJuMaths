@@ -171,3 +171,54 @@ button:hover {
     height: 80px;
   }
 }
+
+/* Make inputs and buttons larger for mobile users */
+input[type="number"], 
+button, 
+.play-btn {
+  font-size: 20px;   /* bigger text */
+  padding: 12px 18px; /* more tap-friendly */
+  border-radius: 10px;
+}
+
+/* Question text */
+#question {
+  font-size: 28px;   /* larger for visibility */
+  margin: 20px 0;
+}
+
+/* Score/timer text */
+#timer, #score, #count {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* On phones, make everything scale nicely */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #question {
+    font-size: 24px;
+  }
+
+  input[type="number"] {
+    width: 100%;  /* full width on phones */
+    box-sizing: border-box;
+  }
+
+  button, .play-btn {
+    width: 100%;   /* full width on phones */
+    margin-top: 10px;
+  }
+
+  .game-card {
+    width: 100%;
+    max-width: 350px; /* stops cards from being too wide */
+  }
+}
