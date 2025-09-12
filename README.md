@@ -1,2 +1,2 @@
 # JuJuMaths
-Fun Math game.
+Website is under maintainance
