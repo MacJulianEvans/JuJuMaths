@@ -1,2 +1,2 @@
 # JuJuMaths
-Website is under maintainance
+Website is under maintenance
